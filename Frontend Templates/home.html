@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewreport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/iconic/css/material-design-iconic-font.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="index.css" />
+    <title>
+		F(AI)NANCE
+	</title>
+</head>
+<body>
+    <div class="container-login100" style="background-image: url('{{ STATIC_URL }}/static/images/dummy.jpg'); background-size: cover;"></div>
+	<div class="container-fluid banner" >
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-md">
+					<div class="navbar-brand">F(AI)NANCE</div>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'login' %}">LOGIN</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'news' %}">NEWS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'chart' %}">CHART</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'registration' %}">REGISTER</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-8 offset-md-2 info">
+				<h1 class="text-center">F(AI)NANCE</h1>
+				<p class="text-center">
+					An Intelligent Chatbot for your Personal Finance Management
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
